@@ -267,8 +267,8 @@ def lap_time_mcmc(driver_name, base_lap_time, tire_type, total_laps, observed_la
             
             # Sampling
             trace = pm.sample(
-                draws=1000, 
-                tune=500, 
+                draws=500, 
+                tune=250, 
                 chains=4, 
                 target_accept=0.95, 
                 return_inferencedata=True, 
