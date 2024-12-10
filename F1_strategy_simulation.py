@@ -9,7 +9,8 @@ import time
 import scipy.stats as stats
 
 # Enable FastF1 cache
-ff1.Cache.enable_cache('Cache')
+temp_cache_dir = tempfile.gettempdir()
+ff1.Cache.enable_cache(temp_cache_dir)
 
 # Statistical distribution fitting functions
 def evaluate_distribution(data, dist, dist_name):
