@@ -7,6 +7,7 @@ import plotly.express as px
 import pymc as pm
 import time
 import scipy.stats as stats
+import tempfile
 
 # Enable FastF1 cache
 temp_cache_dir = tempfile.gettempdir()
